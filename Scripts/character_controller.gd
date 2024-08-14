@@ -19,6 +19,7 @@ func _physics_process(_delta: float) -> void:
 	# TODO: See about refactoring to eliminate conditionals
 	if direction:
 		var final_direction: Vector3 = Vector3.ZERO
+		
 		if Input.is_action_pressed("Forward"):
 			final_direction += forward
 		elif Input.is_action_pressed("Backward"):
@@ -29,6 +30,7 @@ func _physics_process(_delta: float) -> void:
 			final_direction += -side
 		if Input.is_action_pressed("Up") or Input.is_action_pressed("Down"):
 			final_direction += up
+		
 		apply_central_force(final_direction * SPEED)
 		
 		particles.emitting = true

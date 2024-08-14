@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=3 uid="uid://bnnt2wpah722y"]
 
 [ext_resource type="Script" path="res://Scripts/character_controller.gd" id="1_h24gp"]
-[ext_resource type="Script" path="res://Levels/camera_controller.gd" id="2_ut4c0"]
+[ext_resource type="Script" path="res://Scripts/camera_controller.gd" id="2_ut4c0"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8t2yq"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
